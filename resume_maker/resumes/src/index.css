@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(var(--primary));
+  --color-primary-dark: rgb(var(--primary-dark));
+  --color-secondary: rgb(var(--secondary));
+  --color-accent: rgb(var(--accent));
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-card: rgb(var(--card));
+  --color-border: rgb(var(--border));
+  
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  --color-indigo-50: #eef2ff;
+  --color-indigo-100: #e0e7ff;
+  --color-indigo-200: #c7d2fe;
+  --color-indigo-300: #a5b4fc;
+  --color-indigo-400: #818cf8;
+  --color-indigo-500: #6366f1;
+  --color-indigo-600: #4f46e5;
+  --color-indigo-700: #4338ca;
+  --color-indigo-800: #3730a3;
+  --color-indigo-900: #312e81;
+
+  --animate-blob: blob 9s infinite;
+  
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(50px, -70px) scale(1.1); }
+    66% { transform: translate(-40px, 40px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+}
+
+@layer base {
+  :root {
+    --primary: 99, 102, 241; /* Indigo 500 */
+    --primary-dark: 124, 58, 237; /* Violet 600 */
+    --secondary: 248, 250, 252;
+    --accent: 14, 165, 233; /* Sky Blue */
+    --background: 248, 250, 252; /* #F8FAFC */
+    --foreground: 15, 23, 42; /* #0F172A */
+    --card: 255, 255, 255;
+    --border: 226, 232, 240; /* #E2E8F0 */
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@utility glass {
+  @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-[0_8px_32px_0_rgba(31,38,135,0.04)];
+}
+
+@utility glass-card {
+  @apply glass rounded-3xl overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/5;
+}
+
+@utility glow-primary {
+  @apply shadow-[0_0_25px_rgba(99,102,241,0.2)];
+}
+
+@utility mesh-gradient {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,0.03) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,0.03) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,0.03) 0, transparent 50%);
+}
+
+/* A4 Sheet Styling (Always in Light Mode for Printing) */
+.a4-sheet {
+  width: 210mm;
+  height: 297mm;
+  padding: 0;
+  margin: auto;
+  background: white !important;
+  box-shadow: 0 0 50px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  color: #0f172a !important;
+}
+
+.force-light {
+  --background: 255, 255, 255;
+  --foreground: 15, 23, 42;
+  --primary: 99, 102, 241;
+  --border: 226, 232, 240;
+}
+
+/* Form Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
