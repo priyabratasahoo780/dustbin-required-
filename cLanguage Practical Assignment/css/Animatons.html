@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .transition-example1 {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  transition: background-color 0.5s ease; /* Transition background-color over 0.5s */
+}
+.transition-example1:hover {
+  background-color: #e74c3c;
+}
+.transition-example2 {
+  width: 300px;
+  height: 100px;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+  opacity: 1;
+  transition: width 2s ease-in, opacity 1s linear; /* Transition width and opacity */
+}
+.transition-example2:hover {
+  width: 150px;
+  opacity: 0.5;
+}
+</style>
+<body>
+    <div class="transition-example1">Hover to change background color</div>
+    <div class="transition-example2">Hover to change width and opacity</div>
+</body>
+</html>

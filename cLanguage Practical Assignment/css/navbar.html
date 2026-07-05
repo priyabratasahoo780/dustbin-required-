@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #divbig{
+    border:2px solid white;
+        height:100px;
+        width:1000px;
+        background-color:rgb(236, 192, 59);
+        color:white;
+        
+    }
+   #div1{
+    border:1px solid black;
+    height:45px;
+    width:150px;
+    display:flex;
+    justify-content:row;
+   }
+   #div2{
+    border:1px solid black;
+    height:30px;
+    width:100px;
+    flex-grow:4;
+    flex-direction:column;
+    margin:10px;
+   }
+  nav ul li{
+    
+   }
+</style>
+<body>
+    <nav>
+    <div id="divbig">
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>service</li>
+            <li>contact us</li>
+       
+        <div id="div1"></div>
+        <div id="div2"></div>
+         </ul>
+    </div>
+    </nav>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        display:flex;
+        width:100%;
+        border:2px solid black;
+        justify-content:space-around;
+        /* margin:10px; */
+        padding:10px;
+        background-color:orange;
+        text-decoration:none;
+        
+    }
+    a{
+        text-decoration:none;
+        color:white;
+    }
+    #div1{
+      border: 1px solid rgb(255, 255, 255);
+      border-radius:10px;
+    }
+    .images{
+        background-image:url('photo-1755441172753-ac9b90dcd930.avif');
+        width:400px;
+        height:300px;
+        background-size:cover;
+        opacity:0.5;
+    }
+    [alt="island"]{
+        border:5px solid black;
+    }
+    /*   particular */
+      [alt~=images]{
+         border:5px solid black;
+      }
+      /* }  mutiple images */
+         [alt*="ws"]{
+            border:7px solid red;
+        } 
+         [alt^=la]{
+            border:10px solid blue;
+         }
+         [alt$=ge]{
+            border:15px solid green;
+         }
+        form input:focus{
+            background-color: blue;
+            color:white;
+         }
+         form input:valid{
+            background-color:green;
+         }
+         form input:invalid{
+            background-color:red;
+         }
+</style>
+<body>
+    <div>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About us</a>
+        <a href="">Contact us</a>
+        <a href="">Services</a>
+        <div>
+        <input type="search" name="" id="div1" placeholder="search">
+        <button>Search</button>
+        </div>
+    </nav>
+    </div>
+    <div class="images"></div>
+    <div style="margin-top:50px;"><img src="photo-1756965812897-3f4c2a6c242c.avif" alt="island images"></div>
+    <div style="margin-top:50px;"><img src="photo-1756965812897-3f4c2a6c242c.avif" alt="water images"></div>
+     <div style="margin-top:50px;"><img src="licensed-image.jpg" alt="news imag"></div>
+     <div style="margin-top:50px;"><img src="1image.jpg" alt="land images"></div>
+     <div style="margin-top:50px;"><img src="photo-1756965812897-3f4c2a6c242c.avif" alt="tree image"></div><br>
+     <form>
+        <label for="full name">full name:</label>
+      <input type="text" name="full name" id="full name">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <button>search</button>
+      </form>
+</body>
+</html>

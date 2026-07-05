@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+    border:2 solid black;
+    border-collapse:collapse;
+    }
+    th, td{
+        border:1px solid black;
+        padding:15px;
+    }
+    th:nth-child(odd){
+        background:linear-gradient(red,blue);
+        color:white;
+    }
+  th:nth-child(even){
+        background:linear-gradient(red,green);
+        color:white;
+  }
+   td:nth-child(odd){
+        background:radial-gradient(rgb(33, 205, 2),red);
+        color:white;
+    }
+  td:nth-child(even){
+        background:blue;
+        color:white;
+  }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Student Name</th>
+            <th>percentage</th>
+            <th>grade</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rahul Shah</td>
+            <td>81%</td>
+            <td>A</td>
+        </tr>
+        <tr>
+       <td>2</td>
+       <td>Ronak Patel</td>
+       <td>75%</td>
+       <td>B+</td>
+        </tr>
+         <tr>
+       <td>3</td>
+       <td>Harsh Patel</td>
+       <td>85%</td>
+       <td>A</td>
+        </tr>
+         <tr>
+       <td>4</td>
+       <td>Rani Kanabar</td>
+       <td>91%</td>
+       <td>A+</td>
+        </tr>
+    </table>
+</body>
+</html>

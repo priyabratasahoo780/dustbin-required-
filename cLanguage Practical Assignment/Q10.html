@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s ease; /* Smooth color transition */
+        }
+
+        #message-box {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.1s;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <p id="message-box">Double-click the button to change this text.</p>
+
+    <button id="magic-btn">Click (Color) / Double-Click (Text)</button>
+
+    <script>
+        // 1. Select the elements
+        const button = document.getElementById('magic-btn');
+        const paragraph = document.getElementById('message-box');
+
+        // 2. Add Event Listener for Single Click (Change Background)
+        button.addEventListener('click', () => {
+            // Generate a random hex color
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        });
+
+        // 3. Add Event Listener for Double Click (Change Text)
+        button.addEventListener('dblclick', () => {
+            paragraph.textContent = "✨ Success! You double-clicked the button! ✨";
+            paragraph.style.color = "blue"; // Optional: Change text color too
+        });
+    </script>
+
+</body>
+</html>

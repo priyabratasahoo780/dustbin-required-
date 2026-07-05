@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            border:2px solid rgb(0, 0, 0);
+            width: 100%;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #displayArea {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 5px solid #ffffff;
+            display: none; /* Hidden by default until data exists */
+        }
+        #displayAreas{
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 5px solid #ffffff;
+            display: none; /* Hidden by default until data exists */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Data Form</h2>
+        <form id="userForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <button id="submmits">Save to sessionStorage</button><br><br>
+            <button id="submmit">Save to LocalStorage</button>
+
+        </form>
+        <div id="displayArea">
+            <h3>Session Data:</h3>
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        </div>
+       <div id="displayAreas">
+            <h3>Local Data:</h3>
+            <p>Name: <span id="displayNameLocal"></span></p>
+            <p>Email: <span id="displayEmailLocal"></span></p>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

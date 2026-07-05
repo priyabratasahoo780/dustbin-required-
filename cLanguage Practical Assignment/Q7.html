@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light Gray Background */
+        }
+
+        .my-box {
+            /* 1. Content Dimensions */
+            width: 300px;
+            height: 150px;
+
+            /* 2. Padding (Space INSIDE the border) */
+            padding: 40px;
+            /* Note: Background color extends into the padding */
+
+            /* 3. Border (The wall around the content+padding) */
+            border: 10px solid #d64161; /* Thick Red Border */
+
+            /* 4. Margin (Space OUTSIDE the border) */
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="my-box">
+        <strong>Content Area</strong><br>
+        Width: 300px<br>
+        Height: 150px
+    </div>
+
+</body>
+</html>

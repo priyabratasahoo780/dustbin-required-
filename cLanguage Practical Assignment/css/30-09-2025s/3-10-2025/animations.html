@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes fadeIn{
+        from{ opacity: 0;}
+      to{ opacity: 1; }  
+    }
+    @keyframes slideIn{
+        0%{transform: translateX(100px); }
+        100%{transform: translateY(0); }
+    }
+    .example1{
+        width:100px;
+        height:100px;
+        background-color: rgb(27, 187, 193);
+        color:white;
+        padding:10px;
+        animation: fadeIn 2s ease;
+        /* animation-duration: infinity; */
+    }
+    .example2{
+        width:100px;
+        height:100px;
+        background-color: red;
+        color:white;
+        padding:10px;
+        animation: slideIn 4s ease;
+        /* animation-duration: infinity; */
+    }
+    @keyframes fadeEffect {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animation-name-example1 {
+  width: 100px;
+  height: 100px;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+  animation-name: fadeEffect;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scale {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+.animation-name-example2 {
+  width: 100px;
+  height: 100px;
+  background-color: #f1c40f;
+  color: black;
+  padding: 10px;
+  animation-name: fade, scale;
+  animation-duration: 2s, 2s;
+}
+@keyframes delayedFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animation-delay-example1 {
+  width: 100px;
+  height: 100px;
+  background-color: #e67e22;
+  color: white;
+  padding: 10px;
+  animation-name: delayedFade;
+  animation-duration: 0.5s;
+  animation-delay: 3s; /* 0.5s delay */
+}
+@keyframes slideEffect {
+  from { transform: translateX(-50px); }
+  to { transform: translateX(0); }
+}
+.animation-delay-example2 {
+  width: 100px;
+  height: 100px;
+  background-color: #34495e;
+  color: white;
+  padding: 10px;
+  animation-name: slideEffect;
+  animation-duration: 5s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: -0.3s; /* Starts 0.3s into animation */
+}
+@keyframes opac{
+    0%{
+        opacity:.5;
+    }
+    50%{
+        opacity:.7;
+    }
+}
+</style>
+<body>
+    <!-- <div class="example1">fade in example</div> -->
+    <!-- <div class="example2"></div> -->
+     <!-- <div class="animation-name-example1">Fade in effect</div> -->
+     <!-- <div class="animation-name-example2">Fade and scale effect</div> -->
+     <!-- <div class="animation-delay-example1">Delayed fade in</div> -->
+     <div class="animation-delay-example2">Negative delay slide</div>
+</body>
+</html>

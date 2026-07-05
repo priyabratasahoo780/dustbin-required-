@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        /* card list */
+.card-list {
+  background-color: gold;
+  border: 3px dotted black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 4%;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) {
+  .card {
+
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+
+  }
+}
+
+/* individual card  */
+.card {
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+  font-size: 20px;
+  padding: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+}
+
+.card__item {
+  border: 1px dashed;
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.card__img {
+  border: 1px dashed;
+  margin-bottom: 8px;
+  height: 120px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    
+  }
+  
+  .card__img {
+    flex-basis: 33%;
+    margin: 0;
+    height: auto;
+  }
+}
+
+/* Background Styles */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 30px;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__img {
+  background-color: dodgerblue;
+}
+    </style>
+<body>
+<div class="card-list">
+  <div class="card">
+
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+
+  </div>
+  <div class="card">
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__img">Image</div>
+
+    <div class="card__body">
+      <h3 class="card__item card__title">Title</h3>
+      <div class="card__item card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</div>
+      <a href="#" class="card__item card__link">Read more</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+/* card list */
+.card-list {
+  background-color: gold;
+  border: 3px dotted black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 4%;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) {
+  .card {
+    flex-basis: 48%; 
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+/* individual card  */
+.card {
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+  font-size: 20px;
+  padding: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+}
+
+.card__item {
+  border: 1px dashed;
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.card__img {
+  border: 1px dashed;
+  margin-bottom: 8px;
+  height: 120px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+  
+  .card__img {
+    flex-basis: 33%;
+    margin: 0;
+    height: auto;
+  }
+}
+
+/* Background Styles */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 30px;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__img {
+  background-color: dodgerblue;
+} -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bg-origin-example1 {
+  background-image: url('https://www.w3schools.com/css/img_tree.png');
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border: 5px solid #333;
+  padding: 15px;
+  width: 200px;
+  height: 150px;
+  color: black;
+}
+.text-shadow-example2 {
+  text-shadow: 2px 2px 3px red, -2px -2px 3px blue; /* Two shadows: red (right/down), blue (left/up) */
+  font-size: 24px;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  color: white;
+}
+.box-shadow-example2 {
+  box-shadow: inset 0 0 10px 5px rgba(0, 128, 0, 0.7); /* Inset, no offset, 10px blur, 5px spread, semi-transparent green */
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: black;
+}
+</style>
+<body>
+    <div class="box-shadow-example2">Box with inset green shadow</div>
+    <div class="text-shadow-example2">Text with red and blue shadows</div>
+    <div class="bg-origin-example1">Tree image positioned from border</div>
+</body>
+</html>

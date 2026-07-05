@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 1px solid red;
+        width:100vw;
+        height:100vh;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .box{
+        border: 1px solid green;
+        width:100px;
+        height:100px;
+        background-color:orangered;
+    }
+    .box2{
+        border: 1px solid green;
+        width:100px;
+        height:100px;
+        background-color:orangered;
+    }
+    .box3{
+        border: 1px solid green;
+        width:100px;
+        height:100px;
+        background-color:orangered;
+    }.box4{
+        border: 1px solid green;
+        width:100px;
+        height:100px;
+        background-color:orangered;
+    }.box5{
+        border: 1px solid green;
+        width:100px;
+        height:100px;
+        background-color:orangered;
+    }.box6{
+        border: 1px solid green;
+        width:100px;
+        height:100px;
+        background-color:orangered;
+    }
+    .con{
+        /* border:1px solid blue; */
+        width:100vw;
+        height:10vh;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+    @media all and (max-width:600px) {
+        .box{
+            order:4;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="con">
+    <div class="box">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    </div>
+    </div>
+</body>
+</html>

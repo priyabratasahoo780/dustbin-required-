@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage API Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            background-color: #f4f4f9;
+        }
+
+        .input-group {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+
+        button:hover { opacity: 0.9; }
+
+        /* Button Colors */
+        #btn-local { background-color: #ffffff; } /* Green */
+        #btn-session { background-color: #ffffff; } /* Blue */
+        #btn-clear { background-color: #ffffff; } /* Red */
+
+        .display-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h3 { margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px;}
+        
+        ul { list-style-type: none; padding: 0; }
+        
+        li {
+            background: #f9f9f9;
+            border-bottom: 1px solid #eee;
+            padding: 8px;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Storage API: Local vs Session</h2>
+
+    <div class="input-group">
+        <input type="text" id="messageInput" placeholder="Type a message here...">
+        <button id="btn-local">Save to Local</button>
+        <button id="btn-session">Save to Session</button>
+        <button id="btn-clear">Clear All</button>
+    </div>
+
+    <div class="display-container">
+        <div class="column">
+            <h3>Local Storage (Persists)</h3>
+            <ul id="localList"></ul>
+        </div>
+
+        <div class="column">
+            <h3>Session Storage (Temporary)</h3>
+            <ul id="sessionList"></ul>
+        </div>
+    </div>
+
+    <script>
+        // 1. Select DOM elements
+        const inputField = document.getElementById('messageInput');
+        const localList = document.getElementById('localList');
+        const sessionList = document.getElementById('sessionList');
+
+        // Keys for storage
+        const LOCAL_KEY = 'my_local_messages';
+        const SESSION_KEY = 'my_session_messages';
+
+        // 2. Helper Function: Update the DOM based on storage data
+        function updateDisplay() {
+            // Get data from storage (convert string back to array)
+            const localData = JSON.parse(localStorage.getItem(LOCAL_KEY)) || [];
+            const sessionData = JSON.parse(sessionStorage.getItem(SESSION_KEY)) || [];
+
+            // clear current lists
+            localList.innerHTML = '';
+            sessionList.innerHTML = '';
+
+            // Render Local List
+            localData.forEach(msg => {
+                const li = document.createElement('li');
+                li.textContent = msg;
+                localList.appendChild(li);
+            });
+
+            // Render Session List
+            sessionData.forEach(msg => {
+                const li = document.createElement('li');
+                li.textContent = msg;
+                sessionList.appendChild(li);
+            });
+        }
+
+        // 3. Helper Function: Save data
+        function saveMessage(type) {
+            const message = inputField.value;
+            if (!message) return alert("Please type a message first!");
+
+            if (type === 'local') {
+                const currentData = JSON.parse(localStorage.getItem(LOCAL_KEY)) || [];
+                currentData.push(message);
+                localStorage.setItem(LOCAL_KEY, JSON.stringify(currentData));
+            } else {
+                const currentData = JSON.parse(sessionStorage.getItem(SESSION_KEY)) || [];
+                currentData.push(message);
+                sessionStorage.setItem(SESSION_KEY, JSON.stringify(currentData));
+            }
+
+            inputField.value = ''; // Clear input
+            updateDisplay(); // Refresh UI
+        }
+
+        // 4. Event Listeners
+        document.getElementById('btn-local').addEventListener('click', () => saveMessage('local'));
+        document.getElementById('btn-session').addEventListener('click', () => saveMessage('session'));
+        
+        document.getElementById('btn-clear').addEventListener('click', () => {
+            localStorage.removeItem(LOCAL_KEY);
+            sessionStorage.removeItem(SESSION_KEY);
+            updateDisplay();
+        });
+
+        // 5. Initial Load (Check if data exists on page refresh)
+        updateDisplay();
+
+    </script>
+</body>
+</html>

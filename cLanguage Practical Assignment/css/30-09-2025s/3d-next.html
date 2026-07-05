@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D matrix</title>
+</head>
+<style>
+    .container{
+        height: 200px;
+        width: 200px;
+        border:2px solid black;
+    }
+      .container div{
+        height: 100px;
+        width: 100px;
+        border:2px solid black;
+        transform: rotate3d(1,2,4,45deg);
+    }
+    .animations{
+          height: 200px;
+        width: 200px;
+        /* background:linear-gradient(red,green); */
+        background:linear-gradient(red,green);
+
+        color:white;
+        padding: 10px;
+        /* transition: background-color 2s ease; */
+        transition: all 4s ease-in-out;
+    }
+    .animations:hover{
+        /* background:linear-gradient(red,green); */
+        background:radial-gradient(red,blue);
+        width:250px;
+    }
+</style>
+<body>
+    <!-- <div class="container">
+        <div></div>
+    </div> -->
+    <div class="animations">Hover to change background color</div>
+</body>
+</html>

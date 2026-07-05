@@ -1,0 +1,2086 @@
+/* BATA.css - Corrected for Perfect Responsiveness */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* --- Base Styles (Desktop First) --- */
+.start {
+    width: 100vw;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+.rect {
+    width: 60vw;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+.for-flex1 {
+    width: 12vw;
+    height: 4vh;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.free {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.frontpage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761151161/bata1_hua2bi.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bata {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1000; /* Ensure header is above content */
+}
+.name {
+    width: 19vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 550;
+    margin-left: 1rem;
+    color: white;
+}
+.MENP a, .WOMENG a, .WOMENG {
+    color: white;
+}
+.logo img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 24vw;
+}
+.for-flexten {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+input {
+    border: 1px solid rgba(255, 255, 255, 0.146);
+    background-color: rgba(255, 255, 255, 0.105);
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 25rem;
+}
+.s_box {
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 1;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.three {
+    width: 8vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+.love img {
+    width: 1.4vw;
+}
+.for-flex_gender {
+    width: 18vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: underline;
+    margin-top: 64vh;
+    margin-left: 46vw;
+    font-weight: 500;
+}
+.photo, .three_photo {
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+.juti1, .juti2, .juti3, .juti4 {
+    width: 50vw;
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.juti1 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761209932/imgi_1527_desk_editorials_banner_1A_bata_aj5msg.jpg");
+}
+.juti2 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761209930/imgi_277_banner2_desktop_cklsft.jpg");
+}
+.juti3 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761217669/imgi_1554_NS-2-Editorial-banner-2-columns-Desktop-1920x2276_fk7s8b.jpg");
+}
+.juti4 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761217671/imgi_1557_1920x2276_ow8yj0.jpg");
+}
+
+/* Red Banners */
+.online, .onlines, .on {
+    background-color: red;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.88rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 550;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering fix applied here */
+}
+.online { width: 15vw; height: 3vh; margin-top: 48%; }
+.onlines { width: 8vw; height: 3vh; margin-top: 51%; }
+.on { width: 12vw; height: 3vh; margin-top: 45%; background-color: rgba(0, 0, 0, 0.285); }
+
+/* Gender Links Below Banners */
+.for-flex_genders, .for-flex_gend, .for-flex_genden {
+    width: 28vh;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 22vw;
+    margin-top: 3rem;
+}
+.for-flex_gend { margin-left: 16rem; }
+.STRIKE {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "BBH Sans Bogle", sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+.shop {
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32%;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+/* Three Photo Section */
+.photo_one, .photo_two, .photo_three {
+    width: 33.33vw;
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.photo_one { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761217669/imgi_1544_Banner_Desktop_Bata_Festive_Men_1280x2276_evqzml.jpg"); }
+.photo_two { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761217671/imgi_1547_Banner_Desktop_Bata_Festive_Women-1_1280x2276_o9z3n1.jpg"); }
+.photo_three { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761217672/imgi_1550_BBG_Banner_Desktop_1280x2276_hailat.jpg"); }
+.time {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "BBH Sans Bogle", sans-serif;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 80vh;
+}
+.single {
+    width: 33.33vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+}
+
+/* Recommended for You Section */
+.blacks {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+.variety {
+    width: 99vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.058);
+    flex-wrap: wrap;
+}
+.vareify1, .vareify2, .vareify {
+    width: 24.5vw;
+    height: 70vh;
+    border-right: 2px solid rgb(247, 249, 247);
+}
+.vareify2 { border-left: 2px solid rgb(247, 249, 247); }
+.vareify { border: none; }
+.titles {
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.n {
+    color: black;
+    font-weight: 550;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+.back_img, .back_img1, .back_img2, .back_img3 {
+    width: 100%;
+    height: 60vh;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    transition: background-image 0.25s linear;
+}
+/* Hover effects for product images */
+.back_img { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283338/6618113_1_csppac.jpg"); }
+.back_img:hover { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283332/6618113_2_tsjyst.jpg"); }
+.back_img1 { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283332/7798454_1_k1riok.jpg"); }
+.back_img1:hover { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283332/7798454_2_y6los0.jpg"); }
+.back_img2 { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283331/8396212_1_bg079x.jpg"); }
+.back_img2:hover { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283331/8396212_2_jgm5ml.jpg"); }
+.back_img3 { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283331/8396788_1_xrfcce.jpg"); }
+.back_img3:hover { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761283331/8396788_2_sze4e8.jpg"); }
+
+.G_Box {
+    width: 100%;
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+}
+.Bcolor {
+    width: 100%;
+    height: 3vh;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.BGcolor {
+    color: black;
+    font-weight: 550;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.colors {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 6vh;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 1rem;
+    display: flex;
+}
+.plus img {
+    width: 1.8vw;
+    height: 2.8vh;
+    display: flex;
+}
+.mrp {
+    width: 100%;
+    height: 3vh;
+    color: black;
+    font-weight: 550;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+.no {
+    color: black;
+    padding-left: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    font-size: 0.9rem;
+}
+
+/* Red Offer Banners */
+.red {
+    border: 1px solid green;
+    width: 99vw;
+    height: 46vh;
+    display: flex;
+}
+.red_contain, .red_contain1 {
+    width: 33vw;
+    height: 46vh;
+    background-color: rgb(181, 24, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s linear;
+}
+.red_contain1 { background-color: rgb(201, 50, 36); }
+.red_contain:hover, .red_contain1:hover { background-color: #800000; }
+.red_text {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "BBH Sans Bogle", sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+/* Brands & Collections */
+.floatzs {
+    display: flex;
+    width: 99vw;
+    height: 45vh;
+}
+.floatz, .nine_west, .hush {
+    width: 33vw;
+    height: 44vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    filter: brightness(1);
+}
+.floatz { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761325667/imgi_1633_1-floats_ju1mnf.jpg"); }
+.nine_west { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761325667/imgi_1635_2-nine-west_pzrjnz.jpg"); }
+.hush { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761325669/imgi_1637_HP-1-Editorial-banner-low-2-columns-Desktop-1280x854_bzglo1.jpg"); }
+
+.floatz:hover, .nine_west:hover, .hush:hover {
+    transform: scale(0.99);
+    filter: brightness(0.6);
+}
+.nine_west:hover {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761331951/imgi_1637_M-nine-west_s0c32f.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.f_text, .N_text, .W_text {
+    font-size: 2.4rem;
+    font-weight: 900;
+    font-family: "BBH Sans Bogle", sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.N_text, .W_text { font-weight: 550; }
+
+.our {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+.onlineer {
+    display: flex;
+    width: 100vw;
+    height: 68.8vh;
+}
+.fest, .fest2, .fest3, .fest4 {
+    width: 25vw;
+    height: 68vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.fest { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761325668/imgi_291_960x1280-px-_-Desktop-10by10-sneaker-collection_ids2jg.jpg"); }
+.fest2 { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761325668/imgi_292_960x1280-px-_Desktop---10by10-Wedding-collection_dn4scy.jpg"); }
+.fest3 { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761325668/imgi_293_960x1280-px-_Desktop---Exclusive-online_javbus.jpg"); }
+.fest4 { background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761325668/imgi_294_960x1280-px-_Desktop---10by10-workwear_y945lq.jpg"); }
+.red_texts {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "BBH Sans Bogle", sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* --- Footer (.l_main) Desktop/Base Styles --- */
+.l_main {
+    width: 100vw;
+    height: 48vh;
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 2rem 0;
+}
+.l_box1 {
+    width: 33vw;
+    height: 48vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.club {
+    width: 100%;
+    height: 25vh;
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761380721/Screenshot_2025-10-25_143431_v3t1p1.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.red_textsb {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "BBH Sans Bogle", sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+.wordss {
+    color: rgb(200, 200, 200);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.tomato_box {
+    width: 10vw;
+    height: 5vh;
+    background-color: rgb(215, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.l_box2 {
+    width: 67vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+.l_box21 {
+    width: 25%;
+}
+.sc {
+    color: white;
+}
+.bc1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.bc {
+    font-size: 0.85rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 0.3rem;
+    line-height: 1.3;
+}
+.find_store {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.find {
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    justify-content: space-between;
+}
+.loco, .loco1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.loco .bc { color: white; }
+.loco1 .bcs { color: white; }
+.w img { width: 1.5vw; }
+.icon_five img { width: 15vw; }
+.last_one {
+    background-color: rgb(34, 34, 34);
+    color: rgb(200, 200, 200);
+    font-size: 0.8rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* --- Responsive Styles --- */
+
+/* Tablet/Mid-Sized Devices */
+@media (max-width: 1024px) {
+    /* --- Header Adjustments --- */
+    .rect {
+        width: 100vw;
+        padding: 0 1rem;
+        height: auto;
+    }
+    .free {
+        font-size: 0.75rem;
+        text-align: right;
+    }
+    .bata {
+        height: 8vh;
+    }
+    .name {
+        width: 35vw;
+        font-size: 0.85rem;
+    }
+    .logo img {
+        padding-left: 5vw;
+        width: 12vw;
+    }
+    .s_box input {
+        width: 18vw;
+        margin-left: 2rem;
+        font-size: 0.9rem;
+    }
+    .three {
+        width: 12vw;
+    }
+    .three img, .love img {
+        width: 2vw;
+    }
+
+    /* --- Image Sections (Two-Column & Three-Column) Fixes --- */
+    .frontpage { height: 60vh; }
+    .for-flex_gender {
+        margin-top: 40vh;
+        margin-left: 40vw;
+        width: 20vh;
+    }
+    .juti1, .juti2, .juti3, .juti4 {
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .online, .onlines, .on {
+        width: 25vw;
+        font-size: 0.7rem;
+        transform: translate(-50%, -50%); /* Correct centering */
+    }
+    .for-flex_genders, .for-flex_gend, .for-flex_genden {
+        margin-left: 10vw;
+        width: 30vw;
+        justify-content: space-around;
+        font-size: 0.9rem;
+    }
+    .photo_one, .photo_two, .photo_three {
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .time {
+        font-size: 1.8rem; /* Responsive Text Size Fix */
+        margin-top: 55vh;
+        text-align: center;
+    }
+    .single {
+        font-size: 1.1rem; /* Responsive Text Size Fix */
+        width: 33.33vw;
+        text-align: center;
+    }
+
+    /* --- Product Grid (2 columns) Fixes --- */
+    .variety {
+        justify-content: space-around;
+        height: auto;
+        padding: 1rem 0;
+    }
+    .vareify1, .vareify2, .vareify {
+        width: 48%;
+        height: auto;
+        margin-bottom: 2rem;
+        border: none;
+    }
+    .G_Box {
+        width: 100%;
+        margin-top: 15rem;
+    }
+    /* Product Text Alignment Fix */
+    .titles, .Bcolor, .colors, .mrp, .no {
+        width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align: left;
+    }
+    .BGcolor { padding-left: 0.5rem; }
+    .plus { margin-right: 0.5rem; }
+    .back_img, .back_img1, .back_img2, .back_img3 {
+        height: 50vh;
+    }
+
+    /* --- Brands & Collections --- */
+    .floatz, .nine_west, .hush, .fest, .fest2, .fest3, .fest4 {
+        height: 35vh;
+        width: 33.33vw;
+        background-size: cover;
+        background-position: center;
+    }
+    .f_text, .N_text, .W_text {
+        font-size: 1.8rem;
+    }
+    .red_texts {
+        font-size: 1.2rem;
+    }
+
+    /* --- Footer (.l_main) Tablet Fixes (2-Column Main Layout) --- */
+    .l_main {
+        flex-direction: row; /* Keep main boxes side-by-side */
+        height: auto;
+        padding: 1rem 0;
+    }
+    .l_box1 {
+        width: 35vw; /* Make the advertising box smaller */
+        padding: 0 1rem 0 1rem;
+    }
+    .club {
+        height: 20vh;
+    }
+    .red_textsb {
+        font-size: 1.8rem;
+    }
+    .wordss {
+        font-size: 0.8rem;
+    }
+    .tomato_box {
+        width: 15vw;
+    }
+    .l_box2 {
+        width: 65vw; /* Give more space to the links */
+        flex-wrap: wrap; /* Allow link columns to wrap */
+        padding: 0 1rem;
+        justify-content: flex-start; /* Align links to the start */
+        gap: 0.5rem;
+    }
+    .l_box21 {
+        width: 48%; /* Two columns per row */
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+        font-size: 0.85rem;
+    }
+    .bc1 {
+        font-size: 1rem;
+    }
+    .find {
+        width: 40vw; /* Adjust find section width */
+    }
+    .w img { width: 2vw; }
+    .icon_five img { width: 30vw; }
+    .last_one {
+        padding-left: 1rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    /* --- Header Adjustments (Mobile-First) --- */
+    .start, .bata, .frontpage { width: 100vw; }
+    .start { height: auto; padding: 0.5rem 0; }
+    .rect { width: 100%; justify-content: space-around; padding: 0; }
+    .for-flex1 { width: 40vw; gap: 0.5rem; justify-content: center; }
+    .for-flex1 img { width: 15vw; }
+    .free { display: none; }
+    .bata {
+        height: 8vh;
+        flex-wrap: nowrap;
+        padding: 0 1rem;
+        justify-content: space-between;
+        background-color: rgb(34, 34, 34); /* Ensure sticky header stands out */
+    }
+    .name { display: none; }
+    .logo { order: 1; width: 30%; height: 100%; }
+    .logo img { padding-left: 0; width: 20vw; position: static; transform: none; }
+    .for-flexten { order: 2; width: 50%; justify-content: flex-end; }
+    .s_box { display: none; }
+    .three { width: 25vw; height: 8vh; justify-content: space-between; }
+    .three img { width: 5vw; }
+    .love img { width: 6vw; }
+
+    /* --- Hero and Main Image Sections (Full Stacking) --- */
+    .frontpage { height: 50vh; background-position: center 20%; }
+    .for-flex_gender {
+        margin-top: 35vh;
+        margin-left: 20vw;
+        width: 60vw;
+        font-size: 0.8rem;
+        justify-content: space-around;
+    }
+    .photo, .three_photo, .red, .floatzs, .onlineer {
+        flex-direction: column;
+        height: auto;
+    }
+    .juti1, .juti2, .juti3, .juti4 {
+        width: 100vw;
+        height: 60vh;
+        margin-bottom: 1rem;
+    }
+    .online, .onlines, .on {
+        width: 50vw;
+        font-size: 0.8rem;
+        margin-top: 45%;
+        transform: translate(-50%, -50%);
+    }
+    .for-flex_genders, .for-flex_gend, .for-flex_genden {
+        margin-left: 20vw;
+        width: 60vw;
+        font-size: 0.8rem;
+        justify-content: space-around;
+    }
+    .shop { margin-left: 40vw; width: 20vw; height: 5vh; }
+    .photo_one, .photo_two, .photo_three {
+        width: 100vw;
+        height: 70vh;
+        margin-bottom: 2rem;
+    }
+    .time {
+        font-size: 1.5rem; /* Responsive Text Size Fix */
+        margin-top: 50vh;
+    }
+    .single {
+        font-size: 1rem; /* Responsive Text Size Fix */
+        width: 100vw;
+        height: 8vh;
+    }
+
+    /* --- Product Grid (Single Column) --- */
+    .blacks { padding-left: 1rem; }
+    .variety { flex-direction: column; padding: 1rem 0; }
+    .vareify1, .vareify2, .vareify {
+        width: 90vw;
+        margin: 0 auto 2rem auto;
+        border: none;
+    }
+    .back_img, .back_img1, .back_img2, .back_img3 {
+        height: 70vw;
+    }
+    .G_Box { margin-top: 55vw; }
+    /* Product Text Alignment Fix */
+    .titles, .Bcolor, .colors, .mrp, .no {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+    .BGcolor { padding-left: 1rem; }
+    .plus { margin-right: 1rem; }
+
+    /* Red Offer Section */
+    .red_contain, .red_contain1 {
+        width: 100%;
+        height: 15vh;
+        margin-bottom: 0.5rem;
+    }
+    .red_text { font-size: 1.8rem; }
+
+    /* Brand Section & Discover Collection */
+    .floatz, .nine_west, .hush {
+        width: 100vw;
+        height: 40vh;
+        margin-bottom: 1rem;
+    }
+    .fest, .fest2, .fest3, .fest4 {
+        width: 100vw;
+        height: 50vh;
+        margin-bottom: 1rem;
+    }
+    .red_texts { font-size: 1.5rem; }
+
+    /* --- Footer (.l_main) Mobile Fixes (Vertical Stacking) --- */
+    .l_main {
+        flex-direction: column; /* Stack all main content vertically */
+        height: auto;
+        padding: 1rem 0;
+    }
+    .l_box1 {
+        width: 100%; /* Full width for the advertising box */
+        padding: 0 1rem 2rem 1rem;
+    }
+    .club { height: 20vh; }
+    .red_textsb { font-size: 1.5rem; }
+    .wordss { font-size: 0.9rem; padding: 1rem 0; }
+    .tomato_box { width: 40vw; margin: 0 auto; }
+    .l_box2 {
+        width: 100%; /* Full width for the link sections */
+        flex-wrap: wrap;
+        padding: 0 1rem;
+        justify-content: space-around;
+    }
+    .l_box21 {
+        width: 50%; /* Display links in two columns */
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+        font-size: 0.8rem;
+    }
+    .bc1 { font-size: 0.9rem; }
+    
+    /* Fix .find_store section stacking */
+    .find_store {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        align-items: center;
+    }
+    .find {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    .loco, .loco1 {
+        font-size: 0.9rem;
+    }
+    .w img { width: 4vw; }
+    .icon_five { width: 100%; justify-content: center; }
+    .icon_five img { width: 60vw; }
+    .last_one {
+        padding-left: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, sans-serif;
+}
+
+.head {
+    /* border:1px solid black; */
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(0, 137, 178);
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.headj img {
+    display: flex;
+    justify-content: center;
+    width: 8vw;
+    height: 5vh;
+}
+
+.headj {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+#search {
+    width: 40vw;
+    height: 5vh;
+    border-radius: 2rem;
+    background-color: #046b8e;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    display: flex;
+    margin-left: 20rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.for-flex {
+    display: flex;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    padding-left: 1.5rem;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-flex1 {
+    /* border:1px solid red; */
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.sign {
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navs2 {
+    /* border:1px solid; */
+    width: 100vw;
+    height: 6vh;
+    background-color: #046b8e;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.space {
+    padding-left: 10rem;
+}
+
+.option {
+    /* border:1px solid black; */
+    width: 100vw;
+    height: 8.6vh;
+    display: flex;
+    position: sticky;
+    top: 4.5rem;
+    background-color: white;
+}
+
+.right_arrow {
+    display: flex;
+    align-items: center;
+    padding-left: 7rem;
+}
+
+.jio_utsav img {
+    width: 2vw;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.jio_utsav {
+    display: flex;
+}
+
+.live {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.for-flex36 {
+    display: flex;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+.left_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 28vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.coupon img {
+    width: 82vw;
+    height: 28vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 2rem;
+}
+
+.for-flex67 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo_three {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 34vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.photo1 {
+    /* border: 1px solid black; */
+    width: 26.6vw;
+    height: 34vh;
+}
+
+.photo1 img {
+    width: 26.6vw;
+    height: 34vh;
+    border-radius: 1.8rem;
+}
+
+.photo_three_one {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.photo1-2 img {
+    width: 26.6vw;
+    height: 12vh;
+    border-radius: 1.8rem;
+}
+
+.sky {
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 64vh;
+    background-color: rgb(214, 240, 255);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.skies {
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 68vh;
+    background-color: rgb(214, 240, 255);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.OFF_50 {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 82vw;
+    height: 10vh;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+.view {
+    color: #046b8e;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.views {
+    color: #046b8e;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewses {
+    color: #046b8e;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finds {
+    color: rgb(204, 0, 0);
+    font-weight: 900;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo_six {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 52vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.photo_sixes {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 52vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.card {
+    /* border:1px solid green; */
+    width: 13vw;
+    height: 46vh;
+    background-color: white;
+    border-radius: 0.8rem;
+}
+
+.card1 {
+    /* border:1px solid green; */
+    width: 13vw;
+    height: 52.6vh;
+    background-color: white;
+    border-radius: 0.8rem;
+}
+
+.smart {
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.card_photo {
+    /* border: 1px solid red; */
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963064/smartees-round-neck-half-sleeve-tshirt-blue-l-product-images-441861543020-0-202509111157_wwvd0w.webp");
+    width: 10.5vw;
+    height: 26vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 30vh 30vh;
+    /* position: relative; */
+}
+
+.Add {
+    border: 1px solid rgba(0, 0, 0, 0.228);
+    width: 12vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 2rem;
+    color: green;
+    font-weight: 550;
+}
+
+.card_photo1 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963063/live-fashion-pink-women-croco-textured-pu-sling-bag-product-images-rvxe08foxn-0-202409111402_eckfmp.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo2 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963060/bruton-fit-man-sneaker-shoes-for-men-orange-product-images-rvzri5gtep-0-202401160409_b7ifvw.webp");
+    width: 10.5vw;
+    height: 26vh;
+    display: flex;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo3 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963058/bullmer-brown-trendy-printed-cotton-blend-crew-neck-round-neck-half-sleeve-tshirt-for-men-non-returnable-product-images-rvbhiygfot-0-202508131353_uwyeer.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo4 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963056/hotstyle-men-s-black-sneakers-product-images-rvtzml7sxu-0-202412241913_vobti1.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo5 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963054/pearluxis-women-sling-bags-product-images-rveqzgi5vw-0-202508311747_ngokmo.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo6 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963043/swarajya-india-indra-jyoti-pooja-oil-900ml-enriched-sandalwood-fragnance-lamp-oil-puja-oil-deepam-oil-used-in-pooja-festivals-havan-i-product-images-orv3ipgeuz2-p599338475-0-202509090747_wkeqzl.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+}
+
+.card_photo7 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963042/salutary-pure-camphor-tablet-100-gram-kapoor-tablet-pack-of-2-100-gram-each-pack-product-images-orvritghimo-p612068199-0-202508011411_tv5p3m.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo8 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963037/om-phool-batti-cow-ghee-diya-for-puja-100-pieces-wax-free-vegan-ghee-batti-wicks-jyot-for-puja-aarti-pack-of-1-yellow-100-pcs-product-images-orvtqxyk4pg-p594808262-0-202210261704_gfhyov.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo9 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963036/limetro-stainless-steel-mirror-finish-dinner-set-combo-set-of-6-pcs-product-images-o493831374-p603846735-0-202311071551_tzlyo5.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo10 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963033/neelam-stainless-steel-ultra-pressure-cooker-with-outer-lid-2l-3l-5l-3-pcs-product-images-o493850160-p607295711-0-202401111353_ky3del.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo11 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1760963032/ginara-steel-saucepan-1-5-l-product-images-o494241052-p604744495-0-202309221749_cpbhiq.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.heart {
+    /* position:absolute; */
+    display: flex;
+    /* justify-content: end; */
+    margin-left: 9.4rem;
+    margin-top: 1rem;
+    width: 4vw;
+    height: 4vh;
+}
+
+.heart1 {
+    /* position:absolute; */
+    display: flex;
+    /* justify-content: end; */
+    margin-left: 9.4rem;
+    margin-top: 1rem;
+    width: 4vw;
+    height: 4vh;
+}
+
+.greens {
+    color: green;
+    font-weight: 600;
+    /* border: 1px solid green; */
+    background-color: rgb(234, 255, 234);
+    width: 5vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.discount {
+    opacity: 0.5;
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.for-flex103 {
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    height: 3vh;
+    gap: 6%;
+}
+
+.s_box {
+    /* border:1px solid red; */
+    width: 12vw;
+    height: 16vh;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo_o {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 40vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.card_one {
+    /* border:1px solid green; */
+    width: 13vw;
+    height: 40vh;
+    background-color: white;
+}
+
+.card_one img {
+    width: 13vw;
+    height: 40vh;
+    border-radius: 1.6rem;
+
+}
+
+.card_ones {
+    /* border:1px solid green; */
+    width: 13vw;
+    height: 34vh;
+    background-color: white;
+}
+
+.card_ones img {
+    width: 13vw;
+    height: 34vh;
+    border-radius: 1.6rem;
+
+}
+
+.coupon_down {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 28vh;
+    display: flex;
+    margin: auto;
+}
+
+.coupon_down img {
+    width: 82vw;
+    height: 28vh;
+    display: flex;
+    border-radius: 2rem;
+}
+
+.containers {
+    /* border:1px solid black; */
+    width: 100vw;
+    height: 74vh;
+    background-color: rgba(0, 0, 0, 0.048);
+    display: flex;
+    flex-direction: column;
+}
+
+.CONTAIN_BOX {
+    /* border: 1px solid red;  */
+    width: 82vw;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.long_box {
+    /* border:1px solid green; */
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+}
+
+.box {
+    /* border:1px solid rgb(146, 0, 95); */
+    width: 14vw;
+    height: 60vh;
+}
+
+.box_five {
+    /* border:1px solid rgb(146, 0, 95); */
+    width: 20vw;
+    height: 60vh;
+}
+
+.weights {
+    font-weight: bolder;
+}
+
+.weights_style {
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.for-flex1187 {
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 18vw;
+    height: 6vh;
+    justify-content: space-between;
+}
+
+.bag {
+    display: flex;
+    justify-content: center;
+}
+
+.bag img {
+    width: 4vw;
+    height: 4vh;
+}
+
+.long_int {
+    /* border:1px solid green; */
+    width: 82vw;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rectangle {
+    /* border:1px solid olive; */
+    display: flex;
+    width: 30vw;
+    height: 10vh;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.f_size {
+    font-size: 0.8rem;
+}
+
+
+
+.top {
+    /* border:1px solid green; */
+    width: 82vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.pick {
+    /* border: 1px solid blueviolet; */
+    width: 82vw;
+    height: 7vh;
+    font-size: 1.6rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+
+.coupon_downs {
+    /* border:1px solid; */
+    width: 82vw;
+    height: 28vh;
+    display: flex;
+    margin: auto;
+}
+
+.coupon_downs img {
+    width: 82vw;
+    height: 28vh;
+    display: flex;
+    border-radius: 2rem;
+    padding-top: 20rem;
+}
+
+.card_photo12 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128248/zebronics-zeb-wing-wired-optical-usb-mouse-with-high-precision-plug-and-play-digital-o491998376-p590960989-0-202112301710_kuvfzp.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo13 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128242/wonderchef-crescent-electric-kettle-1-5-l-digital-o494226707-p609129469-0-202411271819_fbuq60.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo14 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128245/kaltron-7-socket-extension-board-with-fuse-cord-length-2-5-meter-white-product-images-orvox4ywkjx-p600479303-0-202304181220_p8za5k.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo15 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128239/samsung-usb-c-to-usb-c-cable-universal-compatibility-reversible-design-2-amp-100-cm-1-m-length-high-speed-data-transfer-charging-original-white-ep-da705bwegin-digital-o491996849-p590442824-0-202410211849_xi6yd6.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo16 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128236/hoppup-predator-xo1-gaming-earbuds-with-50h-playtime-13mm-drivers-40ms-low-latency-enc-bluetooth-headset-black-true-wireless-product-images-orvhrt4bpm6-p611312636-0-202504161105_et0ojy.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo17 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128231/reconnect-be01803-wireless-earphone-black-digital-o494249502-p609899125-0-202409041725_mudswt.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo18 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128708/pinkcity-wellness-groundnut-oil-5-litres-wooden-cold-pressed-peanut-oil-1-ltr-x-5-bottles-product-images-orvukhxrmwi-p596975160-0-202507061246_xgqhus.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo19 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128711/rajbhog-plain-mankhana-250-g-product-images-orvwgrptaln-p590809907-0-202109301943_f4sc9m.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo20 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128704/navjeevan-jeera-whole-super-saver-pack-1kg-product-images-orvp3uhc7lh-p609570151-0-202407241129_r004rd.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo21 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128700/veer-brand-zaika-long-grain-basmati-rice-10-kg-product-images-orvvxz94klo-p596533238-0-202501301244_l9enec.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo22 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128699/sarfa-kachi-ghani-cold-pressed-mustard-oil-1l-pouch-product-images-orv8hrjuqpj-p609353052-0-202507311706_swjlrx.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo23 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761128694/lali-balaji-california-premium-almond-200g-product-images-orviuff6hly-p590652798-0-202109022136_nerxay.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo24 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761124544/true-elements-rolled-oats-1-kg-buy-1-get-1-free-rolled-oats-that-keeps-you-full-till-lunch-100-natural-and-gluten-free-oats-oats-for-weight-loss-management-product-images-orvhzbsojav-p603678001-0-202310091405_tsprx3.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo25 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129728/joy-honey-and-almonds-nourishing-body-lotion-300ml-pack-of-2-product-images-orvjsxhk5f0-p602262449-0-202501281434_f96z5j.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo26 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129723/dabur-red-toothpaste-700g-2-packs-each-with-2-x-175g-1-toothbrush-worth-rs-30-fluoride-free-bad-breath-cavity-protection-plaque-removal-13-ayurvedic-herbs-for-whole-mouth-health-product-images-orvtlpzjqsx-p61_klc1vj.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo27 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129727/himalaya-gentle-baby-shampoo-400-ml-product-images-orvcwhnyh7j-p610030233-0-202409261357_t9htqi.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo28 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129718/lizol-disinfectant-surface-floor-cleaner-liquid-citrus-5-litre-product-images-orvtmfjuxuo-p601213316-0-202403271318_hja0ef.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo29 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129717/continental-speciale-assorted-coffee-sachets-96gm-pack-of-48-flavour-instant-coffee-powder-2g-each-hazelnut-vanilla-mocha-caramel-makes-48-cups-enjoy-hot-or-cold-product-images-orvqoze3kua-p612033332-0-202507_wc50yr.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.viewse {
+    color: #046b8e;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    padding-left: 42rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_photo30 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129699/kuchipoo-track-pant-for-boys-girls-multicolor-pack-of-5-product-images-rvvt99wtff-0-202412191520_1_o62cfm.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo31 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129696/bullmer-trendy-clothing-set-with-oversized-t-shirt-pants-co-ords-for-men-non-returnable-product-images-rvtv9czdxz-0-202506192036_1_gayxtf.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo32 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129693/eyebogler-teal-tshirts-men-tshirt-tshirt-for-men-tshirt-mens-tshirt-men-s-polo-neck-regular-fit-half-sleeves-colorblocked-t-shirt-product-images-rvkye5vraq-0-202504231102_1_b20otd.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo33 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129689/sender-men-casual-sports-shoes-black-product-images-rvqbsnymfz-0-202502191218_1_fbs6pk.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo34 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129685/1stop-fashion-kurti-for-women-product-images-rvlirebxmp-0-202505291209_1_y53umm.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo35 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129679/ddg-women-printed-naira-cut-kurti-product-images-rvg1qlxp4h-0-202502261544_1_s2hgsc.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo36 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142664/melbon-d115-smart-band-all-android-ios-device-product-images-orvefovmdsf-p593683805-0-202209091536_2_ykjhxe.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo37 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761143141/mak-20w-type-c-pd-fast-charger-with-lightning-cable-high-speed-charging-for-iphone-12-12-pro-12-mini-12-pro-max-11-xs-xr-x-8-plus-ipad-pro-air-mini-white-product-images-orvlattmg9q-p611965703-0-2025071719_2_ilulcl.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo38 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142654/xome-02-bluetooth-neckband-with-fast-charging-type-c-bt-5-2-dual-pairing-72-hours-playback-water-sweat-resistant-orange-product-images-orvvda9lcyk-p611209033-0-202503251137_2_defk9e.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo39 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142659/longway-kwidlight-weight-non-stick-teflon-coated-dry-iron-electric-iron-for-clothes-1-year-warranty-1100-watt-black-product-images-orvfs5k4ua1-p603932295-0-202503201617_1_cuuism.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo40 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142649/melbon-unique-t55-punnkfunnk-unique-t55-1-85-hd-display-bluetooth-calling-smart-watch-100-sports-modes-heart-rate-monitoring-spo2-ai-voice-assistant-ip68-pink-product-images-orv5mdriqwd-p607990937-0-20240_1_pc8y13.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo41 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142644/mak-65w-supervooc-dash-fast-charging-adapter-6a-65w-vooc-dart-warp-dash-technology-with-red-type-c-cable-travel-friendly-fast-charger-white-cable-included-product-images-orv7qc40l6x-p611964854-0-202507161_1_zocvw1.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo42 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142618/decent-home-polycotton-single-bedsheet-with-1-pillow-covers-228-x-152-cm-grey-product-images-orvij8z2woy-p599717859-0-202303221748_w5bykb.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo43 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142613/quirky-home-cotton-blend-double-bedsheet-with-2-pillow-cover-duke-db-607-product-images-orvkjnsbrgp-p612121019-0-202510151542_uasvej.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo44 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142608/evokk-india-bedsheet-for-single-bed-ultra-soft-microfiber-with-pillow-cover-printed-single-size-sheet-for-home-hotel-resort-guest-house-50x87-inches-sky-flower-product-images-o494734205-p612403762-0-202509041_uccxnd.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo45 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142604/apni-dukan-240-tc-glace-cotton-double-fitted-gray-gola-bedsheet-with-2-pillow-covers-225-x-225-cm-product-images-orvufpulnaw-p612381845-0-202509011208_bjpcj0.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo46 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142599/decent-home-polycotton-3d-printed-single-bedsheet-with-1-pillow-covers-228-x-152-cm-blue-product-images-orveyfjb1gm-p599918273-0-202309301128_jkklmw.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo47 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142594/quirky-home-floral-print-cotton-blend-double-bedsheet-with-2-pillow-cover-duke-db-604-product-images-orvr9p9lzyi-p612117659-0-202510140934_xeyurs.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo48 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142569/men-lightly-washed-slim-fit-jeans-model-420497214_darkblue-0-202410211727_ohv5bv.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo49 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142564/printed-slim-fit-leggings-with-elasticated-waist-model-441149435_navyblue-0-202307251454_jwgnzi.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo50 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142560/reliance-jewels-999-laxmi-round-gold-coin-2-g-product-images-o30000691-p603073733-0-202310031754_wkpgzt.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo51 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142555/reliance-jewels-999-bal-gopal-round-gold-coin-1-g-product-images-o30000682-p603073580-0-202312061332_a3oqev.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo52 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142550/graphic-print-round-neck-t-shirt-model-443009898_grey-0-202306131810_ajwing.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo53 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761142546/men-flat-front-slim-fit-trousers-model-420501871_lgtgrey-0-202505301711_c8d1fk.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo29 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129717/continental-speciale-assorted-coffee-sachets-96gm-pack-of-48-flavour-instant-coffee-powder-2g-each-hazelnut-vanilla-mocha-caramel-makes-48-cups-enjoy-hot-or-cold-product-images-orvqoze3kua-p612033332-0-202507_wc50yr.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo29 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129717/continental-speciale-assorted-coffee-sachets-96gm-pack-of-48-flavour-instant-coffee-powder-2g-each-hazelnut-vanilla-mocha-caramel-makes-48-cups-enjoy-hot-or-cold-product-images-orvqoze3kua-p612033332-0-202507_wc50yr.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo29 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129717/continental-speciale-assorted-coffee-sachets-96gm-pack-of-48-flavour-instant-coffee-powder-2g-each-hazelnut-vanilla-mocha-caramel-makes-48-cups-enjoy-hot-or-cold-product-images-orvqoze3kua-p612033332-0-202507_wc50yr.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo29 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129717/continental-speciale-assorted-coffee-sachets-96gm-pack-of-48-flavour-instant-coffee-powder-2g-each-hazelnut-vanilla-mocha-caramel-makes-48-cups-enjoy-hot-or-cold-product-images-orvqoze3kua-p612033332-0-202507_wc50yr.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo29 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129717/continental-speciale-assorted-coffee-sachets-96gm-pack-of-48-flavour-instant-coffee-powder-2g-each-hazelnut-vanilla-mocha-caramel-makes-48-cups-enjoy-hot-or-cold-product-images-orvqoze3kua-p612033332-0-202507_wc50yr.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.card_photo29 {
+    background-image: url("https://res.cloudinary.com/dtw64z2mf/image/upload/v1761129717/continental-speciale-assorted-coffee-sachets-96gm-pack-of-48-flavour-instant-coffee-powder-2g-each-hazelnut-vanilla-mocha-caramel-makes-48-cups-enjoy-hot-or-cold-product-images-orvqoze3kua-p612033332-0-202507_wc50yr.webp");
+    width: 10.5vw;
+    height: 26vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.viewer {
+    color: #046b8e;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    padding-left: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    /* display: none; */
+}

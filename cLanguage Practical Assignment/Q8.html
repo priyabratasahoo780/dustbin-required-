@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo</title>
+    <style>
+        /* Container Styling */
+        .flex-container {
+            display: flex;               /* Enables Flexbox */
+            
+            /* This property aligns items horizontally and handles spacing */
+            justify-content: space-evenly; 
+            
+            /* Optional: Centers items vertically within the container */
+            align-items: center;         
+            
+            background-color: #f0f0f0;   /* Light gray background */
+            height: 200px;               /* Height to show vertical alignment */
+            border: 2px solid #333;
+        }
+
+        /* Box Styling */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;              /* To center text inside the box */
+            justify-content: center;    /* Center text horizontally */
+            align-items: center;        /* Center text vertically */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+</html>

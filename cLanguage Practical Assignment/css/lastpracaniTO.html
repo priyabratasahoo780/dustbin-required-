@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .card{
+        border:1px solid rgb(69, 151, 178);
+        width:100px;
+        height:100px;
+        background-color:rgb(69, 150, 178);
+        display: flex;
+        justify-content: center;
+        /* justify-items: center; */
+        /* justify-content: center; */
+        justify-self:center;
+        /* animation-iteration-count: infinite; */
+        /* animation-name: boxes; */
+        animation: boxes 2s linear infinitel;
+    }
+    @keyframes boxes {
+        0%{
+            transform: rotate3d(10deg, 10deg, 20deg);
+        }
+        10%{
+            transform: rotate(0deg);
+            background: linear-gradient(red,green);
+        }
+         20%{
+            transform: rotate(0deg);
+            background: linear-gradient(red,rgb(40, 11, 203));
+        }
+         30%{
+            transform: rotate(20deg);
+            background: linear-gradient(rgb(93, 9, 55),green);
+        }
+         50%{
+            transform: rotate(60deg);
+            background: linear-gradient(rgb(19, 149, 149),rgb(108, 7, 163));
+        }
+        100%{
+            transform:rotate(360deg);
+            background: radial-gradient(yellow,green);
+        }
+    }
+</style>
+<body>
+   <div class="card"></div>   
+</body>
+</html>

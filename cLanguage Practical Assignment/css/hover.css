@@ -1,0 +1,44 @@
+a:link{
+    color:green;
+}
+a:visited{
+    color:red;
+}
+a:active{
+    color:blue;
+}
+/* div{
+    height:60%;
+    width:45%;
+    background-image:url(photo-1755441172753-ac9b90dcd930.avif);
+}
+div:hover{
+    background-image:url(photo-1756965812897-3f4c2a6c242c.avif);
+} */
+ul{
+    
+}
+table, th, td{
+    border:2px solid black;
+    border-collapse:collapse;
+    height:20px;
+    width:40px;
+    
+    /* border-collapse:collapse; */
+     }
+     /* table{
+        border-collapse:separate;
+        border-spacing:15px;
+        width:100%;
+        text-align:center;
+
+     } */
+      span{
+        display:inline-block;
+        height:20px;
+        width:400px;
+        border:2px solid black;
+      }
+      .container{
+        display: flex;
+      }

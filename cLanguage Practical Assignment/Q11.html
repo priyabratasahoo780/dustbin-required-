@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed JS Demo</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px; margin: 5px; cursor: pointer; background: #ffffff; color: rgb(0, 0, 0); border: none; border-radius: 5px; }
+        
+        #myParagraph {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 60%;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            font-size: 16px; /* Default size */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <button id="sizeBtn">Increase Font (+)</button>
+        <button id="toggleBtn">Hide / Show</button>
+    </div>
+
+    <p id="myParagraph">
+        This is the text we are manipulating. Click the buttons above to test me!
+    </p>
+
+    <script>
+        // This ensures the HTML is fully loaded before JS runs
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Page Loaded. Script running...");
+
+            // 1. Select Elements
+            const paragraph = document.getElementById('myParagraph');
+            const sizeBtn = document.getElementById('sizeBtn');
+            const toggleBtn = document.getElementById('toggleBtn');
+
+            // 2. Variable for Font Size
+            let currentFontSize = 16;
+
+            // 3. Increase Font Function
+            if (sizeBtn) {
+                sizeBtn.addEventListener('click', function() {
+                    currentFontSize += 2;
+                    paragraph.style.fontSize = currentFontSize + "px";
+                    console.log("Font increased to: " + currentFontSize);
+                });
+            }
+
+            // 4. Hide/Show Function
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', function() {
+                    // Check the computed style to be safe
+                    const currentDisplay = window.getComputedStyle(paragraph).display;
+
+                    if (currentDisplay === 'none') {
+                        paragraph.style.display = 'block';
+                        console.log("Paragraph Shown");
+                    } else {
+                        paragraph.style.display = 'none';
+                        console.log("Paragraph Hidden");
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

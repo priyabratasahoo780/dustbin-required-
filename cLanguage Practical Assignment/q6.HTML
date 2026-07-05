@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <style>
+
+        
+        h1 {
+            color: navy;         /* Sets heading color to Navy Blue */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        h2 {
+            color: darkorange;   /* Sets heading color to Dark Orange */
+        }
+
+        /* 2. CLASS SELECTOR */
+        /* Targets any element with class="highlight" */
+        /* Classes are reusable (can be used on multiple elements) */
+        .highlight {
+            color: seagreen;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* 3. ID SELECTOR */
+        /* Targets the SINGLE element with id="main-content" */
+        /* IDs must be unique per page */
+        #main-content {
+            color: #333;               /* Dark gray text */
+            padding: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors Guide</h1>
+
+    <h2>1. The Class Selector</h2>
+    
+    <p>This is a normal paragraph, but <span class="highlight">this part is styled with a class</span>.</p>
+    <p class="highlight">This whole paragraph uses the class style.</p>
+
+    <h2>2. The ID Selector</h2>
+
+    <p id="main-content">
+        This specific paragraph is styled using an ID. It has a background color, 
+        padding, and a border. IDs are unique and used for specific sections!
+    </p>
+
+</body>
+</html>

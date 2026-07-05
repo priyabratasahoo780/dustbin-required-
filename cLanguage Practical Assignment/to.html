@@ -1,0 +1,25 @@
+<img src="./nature.avif" alt="nature" width="200px" id="image"><br>
+    <button id="btn">Hide</button>
+</body>
+<script>
+    var btn = document.querySelector('#btn');
+    var image = document.querySelector('#image');
+    var showImage = true;
+
+    btn.addEventListener("click",()=>{
+        
+        if(showImage){
+        image.style.display = 'none';
+        btn.textContent = 'show';
+        showImage = false;
+        }
+
+        else{
+            image.style.display = 'block';
+            btn.textContent = 'hide';
+            showImage = true;
+        }
+        sessionStorage.setItem("showImage",showImage);
+    })
+    
+</script>
