@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-game</title>
+    <link rel="stylesheet" href="./tre.css">
+</head>
+<body>
+
+  <!-- <video src="https://res.cloudinary.com/dv3jsenpu/video/upload/v1762105680/celebration1-video_goaets.mp4"  autoplay loop muted class="video" ></video> -->
+
+ <div class="maincontainer">
+  <div class="container">
+  <h1 class="click">Click Counter game</h1>
+  <p class="subtitle">Click as fast as you can!</p>
+<!-- 
+  score Displaye section -->
+
+ <div class="score-section">
+<div class="score-box">
+<h1>Current Score</h1>
+<div id="currentScore" class="score">0</div>
+ 
+</div>
+
+ <div class="score-box1">
+<h1>High Score</h1>
+<div id="highscore" class="score">0</div>
+ 
+</div>
+</div> 
+
+
+<!-- Timer Display -->
+
+
+<div class="timer-section">
+<h2>Time Remaining</h2>
+<div id="timer" class="timer">10</div>
+</div> 
+
+<!-- Game button -->
+ <div class="button-section">
+  
+  
+<button id="clickButton" class="click-btn" disabled>Click me!</button>
+<button id="startButton" class="start-btn" >Start Game</button>
+<button id="resetButton" class="reset-btn" disabled>Reset High Score</button>
+<button  id="pauseButtom" disabled>Pause! Game</button> 
+<button id="reasumeButtom" >Reasume Game!</button>
+</div>
+
+
+<!-- Game status message -->
+<div id="statusMessage" class="status-message">
+    Click "start Game" to begin!
+</div>
+
+
+
+
+
+  </div>  
+   </div> 
+    <script src="etc.js"></script> 
+</body>
+</html>
