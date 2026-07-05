@@ -1,0 +1,83 @@
+import axios from 'axios';
+
+// Create axios instance
+// [TACTICAL] Elite Academy API Connection Node
+let apiURL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
+
+// [SAFEGUARD] Ensure API path ends in /api even if user forgot to add it in Vercel
+if (!apiURL.endsWith('/api')) {
+  apiURL = apiURL.replace(/\/$/, '') + '/api';
+}
+
+if (import.meta.env.DEV) console.log('🌐 ACADEMY API TARGET:', apiURL);
+
+
+
+const api = axios.create({
+  baseURL: apiURL,
+  withCredentials: true,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// Request Interceptor
+api.interceptors.request.use(
+  (config) => {
+    // We expect the token to be in localStorage if using Header based auth
+    // But our backend setup sends a cookie for refresh token and a JSON token for access.
+    // Let's store the access token in localStorage for simplicity in this setup.
+    const token = localStorage.getItem('token');
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
+
+// Response Interceptor (Optional: Handle 401s globally)
+api.interceptors.response.use(
+  (response) => response,
+  async (error) => {
+    const originalRequest = error.config;
+    
+    // If error is 401 and we haven't retried yet and it's not the refresh endpoint itself
+    if (error.response?.status === 401 && !originalRequest._retry && originalRequest.url !== '/auth/refresh') {
+      originalRequest._retry = true;
+      
+      try {
+        // Try to refresh token using base axios to avoid interceptor loops
+        const { data } = await axios.post(`${apiURL}/auth/refresh`, {}, {
+          withCredentials: true,
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+        
+        // Save new access token
+        localStorage.setItem('token', data.token);
+        
+        // Retry original request with new token
+        originalRequest.headers.Authorization = `Bearer ${data.token}`;
+        return api(originalRequest);
+      } catch (refreshError) {
+        // If refresh fails, user is logged out
+        localStorage.removeItem('token');
+        // Optional: clear user state by dispatching an event or redirecting
+        // window.location.href = '/login'; 
+        return Promise.reject(refreshError);
+      }
+    }
+    if (import.meta.env.DEV) {
+      console.error('❌ API Error:', {
+        url: error.config?.url,
+        status: error.response?.status,
+        message: error.message
+      });
+    }
+    return Promise.reject(error);
+  }
+);
+
+export default api;
