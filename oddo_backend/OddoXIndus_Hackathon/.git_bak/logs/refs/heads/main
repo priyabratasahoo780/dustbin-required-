@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 694e422748378f40e6353d60bf2ad789ad9cf328 priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773461868 +0530	clone: from https://github.com/utkarshkumarsinghcg-cmyk/OddoXIndus_Hackathon.git
+694e422748378f40e6353d60bf2ad789ad9cf328 52b149c7c912cbd61d2f2d83a6abed0b0892e39c priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773467296 +0530	commit: Backend: Fix ports, connect routes, setup DB schema and postman docs
+52b149c7c912cbd61d2f2d83a6abed0b0892e39c 4dd870259d79fe4676be1e530098680897f0bcc8 priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773467477 +0530	commit (merge): Merge remote-tracking branch 'origin/main'
+4dd870259d79fe4676be1e530098680897f0bcc8 f764639e141b9628fe0698166b0485589d9dcf12 priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773478603 +0530	commit: add the routes and test routes
+f764639e141b9628fe0698166b0485589d9dcf12 032629fad9232a5e2d48c7655b3caa7a6a851d55 priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773479830 +0530	reset: moving to origin/main
+032629fad9232a5e2d48c7655b3caa7a6a851d55 9dcac6d87a639ec0d85d2c87bec1788096c3b7b7 priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773479855 +0530	commit: Replace remote Prisma backend with our raw PG V1 implementation
+9dcac6d87a639ec0d85d2c87bec1788096c3b7b7 c673e8e2c9c3e50b0cc21f9c3c02058c188ea03d priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773480719 +0530	commit (merge): add the backend
+c673e8e2c9c3e50b0cc21f9c3c02058c188ea03d 6390c35baec3bb0ff4c2c3565c7c91e07873dabe priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773481662 +0530	commit: Restore original V1 backend, rename frontend to frontend_1, and keep Backend2
+6390c35baec3bb0ff4c2c3565c7c91e07873dabe 41f4473410d0d38079faec24065d08e1ec993256 priyabratasahoo780 <priyabrata.sahoo.cg@gmail.com> 1773482025 +0530	pull origin main --no-rebase --no-edit: Merge made by the 'ort' strategy.
+41f4473410d0d38079faec24065d08e1ec993256 90cc5bcc7a86b6ff405f3ae5a6a7a816a1f0e56a priyabratasahoo780 <jisik82797@indevgo.com> 1773491720 +0530	commit: Add Render deployment configuration and update pool.js
+90cc5bcc7a86b6ff405f3ae5a6a7a816a1f0e56a 3b9d4d2f3d62a6b62fd8a60df9c4716384fefb66 priyabratasahoo780 <jisik82797@indevgo.com> 1773491971 +0530	commit: Add Render deployment configuration and update pool.js
+3b9d4d2f3d62a6b62fd8a60df9c4716384fefb66 2ad9d44e4a1cf8fb22c6b8fee3b79b5b2f002b56 priyabratasahoo780 <jisik82797@indevgo.com> 1773492599 +0530	commit: Update Backend2 configuration for Render deployment with Prisma
+2ad9d44e4a1cf8fb22c6b8fee3b79b5b2f002b56 609d9311b9def1ecbbcad32a4e5e62629fbef486 priyabratasahoo780 <jisik82797@indevgo.com> 1773492932 +0530	commit: Configure dual-service deployment for both backend versions with separate databases
+609d9311b9def1ecbbcad32a4e5e62629fbef486 b26141c001c989986de6413faddae0b329962785 priyabratasahoo780 <jisik82797@indevgo.com> 1773495163 +0530	commit: Remove .env from Git to fix Render deployment bug
+b26141c001c989986de6413faddae0b329962785 7589cca3c70b9d786670e3478352f3186b2afb48 priyabratasahoo780 <jisik82797@indevgo.com> 1773496034 +0530	commit: Final clean up and push for Backend2 deployment
+7589cca3c70b9d786670e3478352f3186b2afb48 efca8f0eded006e3a6206e49988ed6f7ba062f7b priyabratasahoo780 <jisik82797@indevgo.com> 1773502459 +0530	commit: Configure Render to deploy Backend2 only
+efca8f0eded006e3a6206e49988ed6f7ba062f7b 8f97964e7d8df9b2c276f49bce2ae6211689056e priyabratasahoo780 <jisik82797@indevgo.com> 1773502811 +0530	commit: Ensure free of cost deployment in render.yaml
+8f97964e7d8df9b2c276f49bce2ae6211689056e 993bc87bd2f4c4c19066a12db634f772e30d0aef priyabratasahoo780 <jisik82797@indevgo.com> 1773503433 +0530	commit: Restore dual-service deployment for backend and Backend2
+993bc87bd2f4c4c19066a12db634f772e30d0aef 8acd701b3fa08fff2b2d665318889cf4e032c44c priyabratasahoo780 <jisik82797@indevgo.com> 1773504760 +0530	commit: Integrate Supabase client into Backend2 and update docs
+8acd701b3fa08fff2b2d665318889cf4e032c44c 6b92cdbaeb0fab63c856600b139bee3a6acffaad priyabratasahoo780 <jisik82797@indevgo.com> 1773507218 +0530	commit: Add Vercel configuration and dynamic API URL to frontend
+6b92cdbaeb0fab63c856600b139bee3a6acffaad 74ae2b5051c83348822a3da64001c32d27ca56c8 priyabratasahoo780 <jisik82797@indevgo.com> 1773511355 +0530	pull: Fast-forward
