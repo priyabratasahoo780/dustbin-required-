@@ -1,0 +1,9 @@
+{
+ "name" : "First Extension Example",
+"version" : "1.0.0",
+"description" : "First time I am making this extension from the scratch",
+"manifest_version" : 3,
+"action" : {
+    "default_popup" : "index.html"
+}
+} 
